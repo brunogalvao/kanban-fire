@@ -1,0 +1,16 @@
+<div class="p-4">
+  <mat-form-field class="w-full">
+    <mat-label>Title</mat-label>
+    <input matInput cdkFocusInitial [(ngModel)]="data.task.title" />
+  </mat-form-field>
+  
+  <mat-form-field class="w-full">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="data.task.description"></textarea>
+  </mat-form-field>
+  
+  <div class="w-full flex flex-row gap-2" mat-dialog-actions>
+    <button class="flex-1" mat-button (click)="cancel()">Cancel</button>
+    <button class="flex-1" mat-raised-button color="primary" [mat-dialog-close]="{ task: data.task }">OK</button>
+  </div>
+</div>

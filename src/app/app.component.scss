@@ -1,0 +1,68 @@
+.container {
+  @apply w-4/5 mx-auto;
+
+  &-wrapper {
+    @apply flex flex-wrap justify-around bg-indigo-50 mt-3 rounded-md p-1;
+  }
+
+  &-backlog {
+    width: theme('width.1/3');
+    padding: theme('spacing.2');
+    margin-top: theme('margin.2');
+    background: theme('colors.gray.100');
+    @apply rounded-md p-2 border border-gray-200;
+  }
+
+  &-inProgress {
+    width: theme('width.1/3');
+    padding: theme('spacing.2');
+    margin-top: theme('margin.2');
+  }
+
+  &-done {
+    width: theme('width.1/3');
+    padding: theme('spacing.2');
+    margin-top: theme('margin.2');
+  }
+}
+
+.empty-label {
+  @apply text-center text-gray-500 p-0 m-0 h-11 flex items-center justify-center;
+}
+
+.list {
+  &-backlog {
+    @apply rounded-md p-2 border border-gray-200;
+  }
+}
+
+app-new-task {
+  margin-bottom: 30px;
+}
+
+
+.list-backlog {
+  app-task {
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+:host {
+  display: block;
+}
+
+.item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+//animations
+.cdk-drag-animating {
+  transition: transform 250ms;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
