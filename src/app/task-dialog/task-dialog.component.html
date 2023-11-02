@@ -10,7 +10,21 @@
   </mat-form-field>
   
   <div class="w-full flex flex-row gap-2" mat-dialog-actions>
-    <button class="flex-1" mat-button (click)="cancel()">Cancel</button>
-    <button class="flex-1" mat-raised-button color="primary" [mat-dialog-close]="{ task: data.task }">OK</button>
+    <button
+      class="flex-1"
+      mat-button
+      (click)="cancel()">Cancel</button>
+    <button
+      class="flex-1"
+      mat-raised-button
+      color="primary"
+      [mat-dialog-close]="{ task: data.task }">OK</button>
+    <button
+      *ngIf="data.enableDelete"
+      mat-fab
+      color="primary"
+      aria-label="Delete"
+      [mat-dialog-close]="{ task: data.task, delete: true }">
+    <mat-icon>delete</mat-icon></button>
   </div>
 </div>
