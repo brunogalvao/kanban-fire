@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanban-fire-3047e": {
+      "hosting": {
+        "kanban-fire": [
+          "kanban-fire-3047e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanban-fire-3047e"
+  }
+}
