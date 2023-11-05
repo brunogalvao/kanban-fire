@@ -1,5 +1,25 @@
 # KanbanFire
 
+Configuração do **angular.json** para o deploy no Firebase Hosting:
+
+```
+{
+  "type": "initial",
+  "maximumWarning": "8mb",
+  "maximumError": "8mb"
+},
+```
+
+Configurar o **angular.json** em dev:
+
+```
+{
+  "type": "initial",
+  "maximumWarning": "500kb",
+  "maximumError": "1mb"
+},
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
 ## Development server
