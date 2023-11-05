@@ -1,3 +1,6 @@
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+
 export const environment = {
   production: false,
   firebase: {
@@ -10,7 +13,7 @@ export const environment = {
   },
 };
 
-// const firebaseConfig = {
+// export const environment = {
 //   apiKey: 'AIzaSyBUKm34QweCLeK6bhhMqwj1ACm7kwmj2Zw',
 //   authDomain: 'kanban-fire-3047e.firebaseapp.com',
 //   projectId: 'kanban-fire-3047e',

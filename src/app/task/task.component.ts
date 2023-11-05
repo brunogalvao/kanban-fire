@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from './task';
+import { remove } from 'firebase/database';
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',

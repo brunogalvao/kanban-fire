@@ -9,6 +9,7 @@ import { Task } from '../task/task';
 })
 export class TaskDialogComponent {
   private backupTask: Partial<Task> = { ...this.data.task };
+  dialog: any;
 
   constructor(
     public dialogRef: MatDialogRef<TaskDialogComponent>,
@@ -21,6 +22,7 @@ export class TaskDialogComponent {
     this.dialogRef.close(this.data);
   }
 }
+
 
 export interface TaskDialogData {
   task: Partial<Task>;
